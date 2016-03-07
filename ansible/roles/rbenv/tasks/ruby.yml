@@ -1,0 +1,10 @@
+---
+
+- name: Install ruby
+  command: $SHELL -lc "{{ user_home }}.rbenv/bin/rbenv install {{ ruby_version }}"
+    
+- name: Set global ruby
+  command: $SHELL -lc "{{ user_home }}.rbenv/bin/rbenv global {{ ruby_version }}"
+
+- name: Rehash rbenv
+  command: $SHELL -lc "{{ user_home }}.rbenv/bin/rbenv rehash"

@@ -1,0 +1,6 @@
+---
+
+- hosts: all
+  roles:
+    - role: linux
+    - role: rbenv
