@@ -1,0 +1,6 @@
+---
+
+- name: cloning ruby-build plugin for rbenv
+  git: repo=https://github.com/sstephenson/ruby-build.git
+       dest={{ user_home }}.rbenv/plugins/ruby-build
+       update=no

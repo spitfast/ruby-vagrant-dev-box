@@ -1,0 +1,6 @@
+---
+
+rbenv_version: v1.0.0
+ruby_version: 2.2.3
+deploy_user: vagrant
+user_home: /home/{{ deploy_user }}/

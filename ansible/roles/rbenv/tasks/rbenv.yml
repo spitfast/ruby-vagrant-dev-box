@@ -1,0 +1,11 @@
+---
+
+- name: Cloning rbenv repository
+  git: repo=https://github.com/sstephenson/rbenv.git 
+       dest="{{ user_home }}.rbenv"
+       update=no
+       version={{ rbenv_version }}
+
+- name: add rbenv initialization to profile system-wide
+  template: src=etc/profile.d/rbenv.sh.j2 dest=/etc/profile.d/rbenv.sh owner=root group=root mode=0755
+  sudo: true
