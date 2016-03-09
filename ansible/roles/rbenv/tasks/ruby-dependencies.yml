@@ -2,7 +2,7 @@
 
 - name: install ruby dependencies
   apt: pkg={{ item }} state=present
-  sudo: yes
+  become: true
   with_items:
   - git-core 
   - curl 
