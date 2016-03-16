@@ -48,4 +48,6 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# Project specified ignores
 playbook.yml
+requirements.yml
